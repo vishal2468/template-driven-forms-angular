@@ -9,5 +9,5 @@ import { User } from './user';
 export class AppComponent {
   title = 'tdf';
   topics = ["react","angular","vue"];
-  userModel=new User('Rob','rob@test.com',1234567890,'','Morning',true);
+  userModel=new User('','rob@test.com',1234567890,'','Morning',true);
 }
