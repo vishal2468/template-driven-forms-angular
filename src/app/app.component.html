@@ -3,8 +3,9 @@
   <form #userForm="ngForm">
     <div class="form-group">
       <label>Name</label>
-      <input type="text" class="form-control" [ngModel]="userModel.name" name="userName">
+      <input type="text" #name="ngModel" class="form-control" [ngModel]="userModel.name" name="userName">
     </div>
+    {{name.pristine}}
     <div class="form-group">
       <label>Email</label>
       <input type="email" class="form-control" [ngModel]="userModel.email" name="email">
